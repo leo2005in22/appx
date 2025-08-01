@@ -1,0 +1,31 @@
+.m-register-account {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    min-height: 100%;
+}
+
+.m-register-account .w-form .field.captcha .name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.m-register-account .w-form .field.captcha .name .get-captcha {
+    color: var(--g-theme-page-register-account-form-captcha-name-get-captcha-color);
+    font-size: var(--g-size-14px);
+    text-align: right;
+}
+
+.m-register-account .w-form img.captcha {
+    width: 100%;
+    border-radius: var(--g-size-10px);
+    margin-top: var(--g-size-4px);
+    margin-bottom: var(--g-size-16px);
+}
+
+.m-register-account .w-form .w-btn {
+    margin-top: var(--g-size-24px);
+}

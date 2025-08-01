@@ -1,0 +1,92 @@
+.m-option-order {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    min-height: 100%;
+}
+
+.m-option-order .orders .order .field .type-icon {
+    width: var(--g-size-10px);
+    min-width: var(--g-size-10px);
+    height: auto;
+    margin-left: var(--g-size-4px);
+}
+
+.m-option-order .orders .order .field .type-icon.bullish {
+    fill: var(--g-theme-page-option-orders-order-field-type-icon-bullish-fill);
+}
+
+.m-option-order .orders .order .field .type-icon.bearish {
+    fill: var(--g-theme-page-option-orders-order-field-type-icon-bearish-fill);
+}
+
+.m-option-order .orders .order .field .type-icon.draw {
+    fill: var(--g-theme-page-option-orders-order-field-type-icon-draw-fill);
+}
+
+.m-option-order .orders .order .result.win .value {
+    color: var(--g-theme-page-option-orders-order-result-win-value-color);
+}
+
+.m-option-order .orders .order .result.lose .value {
+    color: var(--g-theme-page-option-orders-order-result-lose-value-color);
+}
+
+.m-option-order .orders .order .result.push .value {
+    color: var(--g-theme-page-option-orders-order-result-push-value-color);
+}
+
+.m-option-order .orders .order .result .icon {
+    width: var(--g-size-10px);
+    min-width: var(--g-size-10px);
+    margin-left: var(--g-size-4px);
+}
+
+.m-option-order .orders .order .result .icon.selected {
+    transform: rotate(180deg);
+}
+
+.m-option-order .orders .order .result.win .icon {
+    fill: var(--g-theme-page-option-orders-order-result-win-icon-fill);
+}
+
+.m-option-order .orders .order .result.lose .icon {
+    fill: var(--g-theme-page-option-orders-order-result-lose-icon-fill);
+}
+
+.m-option-order .orders .order .result.push .icon {
+    fill: var(--g-theme-page-option-orders-order-result-push-icon-fill);
+}
+
+.m-option-order .orders .order .result-detail .amplitude {
+    color: var(--g-theme-page-option-orders-order-result-detail-amplitude-color);
+}
+
+.m-option-order .orders .order .result-detail .amplitude::after {
+    content: "%";
+}
+
+.m-option-order .orders .order .result-detail .amplitude.bullish {
+    color: var(--g-theme-page-option-orders-order-result-detail-amplitude-bullish-color);
+}
+
+.m-option-order .orders .order .result-detail .amplitude.bullish::before {
+    content: "+";
+}
+
+.m-option-order .orders .order .result-detail .amplitude.bearish {
+    color: var(--g-theme-page-option-orders-order-result-detail-amplitude-bearish-color);
+}
+
+.m-option-order .orders .order .result-detail .amplitude.bearish::before {
+    content: "-";
+}
+
+.m-option-order .orders .order .result-detail .amplitude.draw {
+    color: var(--g-theme-page-option-orders-order-result-detail-amplitude-draw-color);
+}
+
+.m-option-order .orders .order .result-detail .amplitude.draw::before {
+    content: "±";
+}

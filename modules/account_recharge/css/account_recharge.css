@@ -1,0 +1,45 @@
+.m-account-recharge {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    min-height: 100%;
+}
+
+.m-account-recharge .w-form .field .wallet-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: solid var(--g-size-1px) var(--g-theme-page-account-recharge-form-field-wallet-address-border-color);
+    border-radius: var(--g-size-10px);
+    padding: var(--g-size-20px) var(--g-size-10px);
+}
+
+.m-account-recharge .w-form .field .wallet-address img.qrcode {
+    width: 30%;
+    height: auto;
+    margin-bottom: var(--g-size-20px);
+}
+
+.m-account-recharge .w-form .field .wallet-address .address {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.m-account-recharge .w-form .field .wallet-address .address .text {
+    color: var(--g-theme-page-account-recharge-form-field-wallet-address-text-color);
+    font-size: var(--g-size-14px);
+    font-weight: 500;
+    word-break: break-all;
+    margin-right: var(--g-size-10px);
+}
+
+.m-account-recharge .w-form .field .wallet-address .address .icon {
+    fill: var(--g-theme-page-account-recharge-form-field-wallet-address-icon-fill);
+    width: var(--g-size-12px);
+    min-width: var(--g-size-12px);
+    height: auto;
+}

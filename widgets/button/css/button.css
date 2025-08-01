@@ -1,0 +1,63 @@
+.w-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: var(--g-size-40px);
+    font-size: var(--g-size-14px);
+    font-weight: 500;
+    border-radius: var(--g-size-8px);
+}
+
+.w-btn.w-btn-sm {
+    height: var(--g-size-32px);
+    font-size: var(--g-size-12px);
+}
+
+.w-btn.w-btn-lg {
+    height: var(--g-size-48px);
+    font-size: var(--g-size-16px);
+}
+
+.w-btn.w-btn-primary {
+    color: var(--g-theme-widget-button-btn-primary-color);
+    background-color: var(--g-theme-widget-button-btn-primary-bg-color);
+}
+
+.w-btn.w-btn-primary:active:not(:disabled) {
+    background-color: var(--g-theme-widget-button-btn-primary-active-bg-color);
+}
+
+.w-btn.w-btn-bullish {
+    color: var(--g-theme-widget-button-btn-bullish-color);
+    background-color: var(--g-theme-widget-button-btn-bullish-bg-color);
+}
+
+.w-btn.w-btn-bullish:active:not(:disabled) {
+    background-color: var(--g-theme-widget-button-btn-bullish-active-bg-color);
+}
+
+.w-btn.w-btn-draw {
+    color: var(--g-theme-widget-button-btn-draw-color);
+    background-color: var(--g-theme-widget-button-btn-draw-bg-color);
+}
+
+.w-btn.w-btn-draw:active:not(:disabled) {
+    background-color: var(--g-theme-widget-button-btn-draw-active-bg-color);
+}
+
+.w-btn.w-btn-bearish {
+    color: var(--g-theme-widget-button-btn-bearish-color);
+    background-color: var(--g-theme-widget-button-btn-bearish-bg-color);
+}
+
+.w-btn.w-btn-bearish:active:not(:disabled) {
+    background-color: var(--g-theme-widget-button-btn-bearish-active-bg-color);
+}
+
+.w-btn:disabled {
+    color: var(--g-theme-widget-button-disabled-color);
+    background-color: var(--g-theme-widget-button-disabled-bg-color);
+    cursor: not-allowed;
+}

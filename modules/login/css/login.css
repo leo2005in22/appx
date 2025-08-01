@@ -1,0 +1,26 @@
+.m-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    min-height: 100%;
+}
+
+.m-login .w-form .header .language {
+    width: var(--g-size-18px);
+    height: auto;
+}
+
+.m-login .w-form .w-btn {
+    margin-top: var(--g-size-16px);
+}
+
+.m-login .w-form .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--g-theme-page-login-form-links-color);
+    font-size: var(--g-size-14px);
+    margin-top: var(--g-size-16px);
+}

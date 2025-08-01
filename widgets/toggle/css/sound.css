@@ -1,0 +1,48 @@
+.w-toggle-sound {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: var(--g-theme-widget-toggle-sound-width);
+    padding: var(--g-theme-widget-toggle-sound-padding);
+    border-radius: var(--g-size-15px);
+    background-color: var(--g-theme-widget-toggle-sound-bg-color);
+}
+
+.w-toggle-sound.off>.switch {
+    transform: translateX(calc(var(--g-theme-widget-toggle-sound-width) - 100% - (var(--g-theme-widget-toggle-sound-padding) * 2)));
+}
+
+.w-toggle-sound>.switch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    border-radius: 50%;
+    padding: var(--g-size-4px);
+    transition: transform var(--g-transition-duration) ease;
+    transform: translateX(0);
+}
+
+.w-toggle-sound>.switch>svg {
+    width: var(--g-size-14px);
+    min-width: var(--g-size-14px);
+    height: auto;
+}
+
+.w-toggle-sound.on>.switch {
+    background-color: var(--g-theme-widget-toggle-sound-on-switch-bg-color);
+}
+
+.w-toggle-sound.off>.switch {
+    background-color: var(--g-theme-widget-toggle-sound-off-switch-bg-color);
+}
+
+.w-toggle-sound.on>.switch>svg {
+    fill: var(--g-theme-widget-toggle-sound-on-switch-svg-fill);
+}
+
+.w-toggle-sound.off>.switch>svg {
+    fill: var(--g-theme-widget-toggle-sound-off-switch-svg-fill);
+}

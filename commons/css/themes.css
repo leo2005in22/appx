@@ -1,0 +1,267 @@
+/******************************************************************************/
+/* light主题 */
+/******************************************************************************/
+[data-theme="light"] {
+    /**************************************************************************/
+    /* 颜色 */
+    /**************************************************************************/
+    --g-theme-color-primary-100: 252, 213, 53;
+    --g-theme-color-primary-200: 240, 185, 11;
+    --g-theme-color-primary-300: 216, 159, 0;
+    --g-theme-color-primary-color: var(--g-theme-color-primary-300);
+    --g-theme-color-primary-bg-color: var(--g-theme-color-primary-100);
+    --g-theme-color-primary-bg-active-color: var(--g-theme-color-primary-200);
+
+    --g-theme-color-red-100: 246, 70, 93;
+    --g-theme-color-red-200: 255, 112, 126;
+    --g-theme-color-red-300: 227, 59, 84;
+    --g-theme-color-red-color: var(--g-theme-color-red-300);
+    --g-theme-color-red-bg-color: var(--g-theme-color-red-100);
+    --g-theme-color-red-bg-active-color: var(--g-theme-color-red-200);
+
+    --g-theme-color-green-100: 14, 203, 129;
+    --g-theme-color-green-200: 50, 217, 147;
+    --g-theme-color-green-300: 46, 189, 133;
+    --g-theme-color-green-color: var(--g-theme-color-green-300);
+    --g-theme-color-green-bg-color: var(--g-theme-color-green-100);
+    --g-theme-color-green-bg-active-color: var(--g-theme-color-green-200);
+
+    --g-theme-color-text: 32, 38, 48;
+    --g-theme-color-label: 132, 142, 156;
+    --g-theme-color-border-color: 234, 236, 239;
+    --g-theme-color-border-color-icon-fill: 146, 154, 165;
+
+    /**************************************************************************/
+    /* 部件 */
+    /**************************************************************************/
+
+    /* 主按钮 */
+    --g-theme-widget-button-btn-primary-color: rgb(var(--g-theme-color-text));
+    --g-theme-widget-button-btn-primary-bg-color: rgb(var(--g-theme-color-primary-bg-color));
+    --g-theme-widget-button-btn-primary-active-bg-color: rgb(var(--g-theme-color-primary-bg-active-color));
+
+    /* 次按钮 */
+    --g-theme-widget-button-btn-secondary-color: rgb(var(--g-theme-color-text));
+    --g-theme-widget-button-btn-secondary-bg-color: rgb(234, 236, 239);
+    --g-theme-widget-button-btn-secondary-active-bg-color: rgb(216, 220, 225);
+
+    /* 看多按钮 */
+    --g-theme-widget-button-btn-bullish-color: rgb(255, 255, 255);
+    --g-theme-widget-button-btn-bullish-bg-color: rgb(var(--g-theme-color-green-bg-color));
+    --g-theme-widget-button-btn-bullish-active-bg-color: rgb(var(--g-theme-color-green-bg-active-color));
+
+    /* 看平按钮 */
+    --g-theme-widget-button-btn-draw-color: rgb(255, 255, 255);
+    --g-theme-widget-button-btn-draw-bg-color: rgb(var(--g-theme-color-primary-bg-color));
+    --g-theme-widget-button-btn-draw-active-bg-color: rgb(var(--g-theme-color-primary-bg-active-color));
+
+    /* 看空按钮 */
+    --g-theme-widget-button-btn-bearish-color: rgb(255, 255, 255);
+    --g-theme-widget-button-btn-bearish-bg-color: rgb(var(--g-theme-color-red-bg-color));
+    --g-theme-widget-button-btn-bearish-active-bg-color: rgb(var(--g-theme-color-red-bg-active-color));
+
+    /* 禁用按钮 */
+    --g-theme-widget-button-disabled-color: rgb(var(--g-theme-color-label), 0.8);
+    --g-theme-widget-button-disabled-bg-color: rgb(216, 220, 225);
+
+    /* 版权 */
+    --g-theme-widget-copyright-color: rgb(var(--g-theme-color-label));
+    --g-theme-widget-copyright-bg-color: rgb(250, 250, 250);
+
+    /* 表单 */
+    --g-theme-widget-form-header-logo-fill: rgb(var(--g-theme-color-primary-bg-color));
+    --g-theme-widget-form-header-name-color: rgb(var(--g-theme-color-primary-bg-color));
+    --g-theme-widget-form-header-icon-fill: rgba(var(--g-theme-color-text), 0.9);
+    --g-theme-widget-form-header-icon-active-fill: rgb(var(--g-theme-color-primary-bg-active-color));
+    --g-theme-widget-form-field-name-color: rgb(var(--g-theme-color-label));
+    --g-theme-widget-form-field-error-color: rgb(var(--g-theme-color-red-color));
+    --g-theme-widget-form-input-focus-caret-color: rgb(var(--g-theme-color-primary-color));
+    --g-theme-widget-form-empty-svg-fill: rgba(var(--g-theme-color-border-color-icon-fill), 0.6);
+    --g-theme-widget-form-empty-div-color: rgb(var(--g-theme-color-label));
+    --g-theme-widget-form-orders-order-border-color: rgb(var(--g-theme-color-border-color));
+    --g-theme-widget-form-orders-order-field-name-color: rgb(var(--g-theme-color-label));
+    --g-theme-widget-form-orders-order-field-value-color: rgb(var(--g-theme-color-text));
+    --g-theme-widget-form-orders-order-field-icon-fill: rgb(var(--g-theme-color-border-color-icon-fill));
+
+    /* 输入组 */
+    --g-theme-widget-input-group-border-color: rgb(var(--g-theme-color-border-color));
+    --g-theme-widget-input-group-input-color: rgb(var(--g-theme-color-text));
+    --g-theme-widget-input-group-input-caret-color: rgb(var(--g-theme-color-text));
+    --g-theme-widget-input-group-input-placeholder-color: rgba(var(--g-theme-color-label), 0.5);
+    --g-theme-widget-input-group-icon-fill: rgb(var(--g-theme-color-border-color-icon-fill));
+
+    /* 开关主题 */
+    --g-theme-widget-toggle-theme-width: var(--g-size-50px);
+    --g-theme-widget-toggle-theme-padding: var(--g-size-4px);
+    --g-theme-widget-toggle-theme-bg-color: rgba(var(--g-theme-color-label), 0.6);
+    --g-theme-widget-toggle-theme-light-switch-bg-color: rgb(255, 255, 255);
+    --g-theme-widget-toggle-theme-dark-switch-bg-color: rgb(var(--g-theme-color-text));
+    --g-theme-widget-toggle-theme-light-switch-svg-fill: rgb(var(--g-theme-color-text));
+    --g-theme-widget-toggle-theme-dark-switch-svg-fill: rgb(255, 255, 255);
+
+    /* 开关声音 */
+    --g-theme-widget-toggle-sound-width: var(--g-size-50px);
+    --g-theme-widget-toggle-sound-padding: var(--g-size-4px);
+    --g-theme-widget-toggle-sound-bg-color: rgba(var(--g-theme-color-label), 0.6);
+    --g-theme-widget-toggle-sound-on-switch-bg-color: rgb(255, 255, 255);
+    --g-theme-widget-toggle-sound-off-switch-bg-color: rgb(var(--g-theme-color-text));
+    --g-theme-widget-toggle-sound-on-switch-svg-fill: rgb(var(--g-theme-color-text));
+    --g-theme-widget-toggle-sound-off-switch-svg-fill: rgb(255, 255, 255);
+
+    /* 提示框 */
+    --g-theme-widget-toast-bg-color: rgba(17, 24, 39, 0.94);
+    --g-theme-widget-toast-type-bg-color: rgba(0, 0, 0, 0.8);
+    --g-theme-widget-toast-type-icon-fill: rgb(255, 255, 255);
+    --g-theme-widget-toast-type-content-color: rgb(255, 255, 255);
+
+    /* 等待遮罩 */
+    --g-theme-widget-wait-mask-bg-color: rgba(17, 24, 39, 0.94);
+    --g-theme-widget-wait-mask-top-text-color: rgb(255, 255, 255);
+    --g-theme-widget-wait-mask-progress-bg-color: transparent;
+
+    /**************************************************************************/
+    /* 页面 */
+    /**************************************************************************/
+
+    /* 启动 */
+    --g-theme-page-splash-bg-color: rgb(255, 255, 255);
+    --g-theme-page-splash-mask-bg-color: rgba(0, 0, 0, 0.7);
+    --g-theme-page-splash-mask-logo-icon-fill: rgb(var(--g-theme-color-primary-color));
+    --g-theme-page-splash-mask-name-color: rgb(var(--g-theme-color-primary-color));
+    --g-theme-page-splash-mask-progress-bg-color: rgb(216, 212, 201);
+    --g-theme-page-splash-mask-progress-current-bg-color: rgb(var(--g-theme-color-primary-color));
+
+    /* 登录 */
+    --g-theme-page-login-form-links-color: rgb(var(--g-theme-color-primary-color));
+
+    /* 注册账户 */
+    --g-theme-page-register-account-form-captcha-name-get-captcha-color: rgb(var(--g-theme-color-primary-color));
+
+    /* 忘记密码 */
+    --g-theme-page-forgot-password-form-captcha-name-get-captcha-color: rgb(var(--g-theme-color-primary-color));
+
+    /* 语言 */
+    --g-theme-page-language-form-field-language-selected-color: rgb(var(--g-theme-color-primary-color));
+
+    /* 主页 */
+    --g-theme-page-home-market-current-price-color: rgb(var(--g-theme-color-text));
+    --g-theme-page-home-market-current-time-label-color: rgb(var(--g-theme-color-label));
+    --g-theme-page-home-market-current-time-value-color: rgb(var(--g-theme-color-text));
+    --g-theme-page-home-market-current-amplitude-label-color: rgb(var(--g-theme-color-label));
+    --g-theme-page-home-market-current-amplitude-value-color: rgb(var(--g-theme-color-text));
+    --g-theme-page-home-market-current-amplitude-value-bullish-color: rgb(var(--g-theme-color-green-color));
+    --g-theme-page-home-market-current-amplitude-value-bearish-color: rgb(var(--g-theme-color-red-color));
+    --g-theme-page-home-market-current-amplitude-value-draw-color: rgb(var(--g-theme-color-primary-color));
+    --g-theme-page-home-market-ohlc-div-label-color: rgb(var(--g-theme-color-label));
+    --g-theme-page-home-market-ohlc-div-value-color: rgb(var(--g-theme-color-text));
+    --g-theme-page-home-kline-bar-bg-color: rgb(248, 248, 248);
+    --g-theme-page-home-kline-bar-div-div-border-color: rgb(217, 217, 217);
+    --g-theme-page-home-kline-bar-div-div-selected-border-color: rgb(var(--g-theme-color-primary-bg-color));
+    --g-theme-page-home-kline-bar-div-div-selected-bg-color: rgb(var(--g-theme-color-primary-bg-color));
+    --g-theme-page-home-kline-history-bg-color: rgb(248, 248, 248);
+    --g-theme-page-home-kline-history-div-label-color: rgb(var(--g-theme-color-label));
+    --g-theme-page-home-kline-history-div-value-color: rgb(var(--g-theme-color-text));
+    --g-theme-page-home-kline-history-amplitude-value-bullish-color: rgb(var(--g-theme-color-green-color));
+    --g-theme-page-home-kline-history-amplitude-value-bearish-color: rgb(var(--g-theme-color-red-color));
+    --g-theme-page-home-kline-history-amplitude-value-draw-color: rgb(var(--g-theme-color-primary-color));
+    --g-theme-page-home-kline-chart-text-color: rgb(var(--g-theme-color-text));
+    --g-theme-page-home-kline-chart-bg-color: rgb(255, 255, 255);
+    --g-theme-page-home-kline-chart-candlestick-series-up-color: rgb(var(--g-theme-color-green-color));
+    --g-theme-page-home-kline-chart-candlestick-series-down-color: rgb(var(--g-theme-color-red-color));
+    --g-theme-page-home-kline-chart-candlestick-series-wick-up-color: rgb(var(--g-theme-color-green-color));
+    --g-theme-page-home-kline-chart-candlestick-series-wick-down-color: rgb(var(--g-theme-color-red-color));
+    --g-theme-page-home-kline-chart-area-series-line-color: rgb(var(--g-theme-color-primary-color));
+    --g-theme-page-home-kline-chart-area-series-top-color: rgba(var(--g-theme-color-primary-color), 0.5);
+    --g-theme-page-home-kline-chart-area-series-bottom-color: rgba(var(--g-theme-color-primary-color), 0.2);
+    --g-theme-page-home-kline-chart-line-series-ma5-color: rgb(240, 185, 11);
+    --g-theme-page-home-kline-chart-line-series-ma10-color: rgb(235, 64, 181);
+    --g-theme-page-home-kline-chart-line-series-ma15-color: rgb(113, 38, 156);
+    --g-theme-page-home-kline-chart-line-series-ma30-color: rgb(214, 56, 100);
+    --g-theme-page-home-menus-border-color: rgb(217, 217, 217);
+    --g-theme-page-home-menus-menu-color: rgb(var(--g-theme-color-label));
+    --g-theme-page-home-menus-menu-selected-color: rgb(var(--g-theme-color-text));
+    --g-theme-page-home-menus-menu-selected-border-bottom-color: rgb(255, 255, 255);
+    --g-theme-page-home-panels-buy-option-datetime-label-color: rgb(var(--g-theme-color-label));
+    --g-theme-page-home-panels-buy-option-datetime-text-color: rgb(var(--g-theme-color-text));
+    --g-theme-page-home-panels-buy-option-status-color: rgb(var(--g-theme-color-text));
+    --g-theme-page-home-panels-buy-option-status-start-color: rgb(var(--g-theme-color-green-color));
+    --g-theme-page-home-panels-buy-option-status-stop-color: rgb(var(--g-theme-color-red-color));
+    --g-theme-page-home-panels-buy-option-countdown-icon-fill: rgb(var(--g-theme-color-label));
+    --g-theme-page-home-panels-buy-form-label-text-color: rgb(var(--g-theme-color-label));
+    --g-theme-page-home-panels-buy-form-label-balance-color: rgb(var(--g-theme-color-label));
+    --g-theme-page-home-panels-buy-form-input-group-input-focus-caret-color: rgb(var(--g-theme-color-primary-color));
+    --g-theme-page-home-panels-buy-form-error-color: rgb(var(--g-theme-color-red-color));
+    --g-theme-page-home-panels-buy-buttons-type-bullish-odds-color: rgb(var(--g-theme-color-green-color));
+    --g-theme-page-home-panels-buy-buttons-type-draw-odds-color: rgb(var(--g-theme-color-primary-color));
+    --g-theme-page-home-panels-buy-buttons-type-bearish-odds-color: rgb(var(--g-theme-color-red-color));
+    --g-theme-page-home-panels-orders-order-border-color: rgb(var(--g-theme-color-border-color));
+    --g-theme-page-home-panels-orders-order-left-icon-fill: rgb(var(--g-theme-color-border-color-icon-fill));
+    --g-theme-page-home-panels-orders-order-left-icon-win-fill: rgb(var(--g-theme-color-green-bg-color));
+    --g-theme-page-home-panels-orders-order-left-icon-lose-fill: rgb(var(--g-theme-color-red-bg-color));
+    --g-theme-page-home-panels-orders-order-left-icon-push-fill: rgb(var(--g-theme-color-border-color-icon-fill));
+    --g-theme-page-home-panels-orders-order-right-row-field-name-color: rgb(var(--g-theme-color-label));
+    --g-theme-page-home-panels-orders-order-right-row-field-value-color: rgb(var(--g-theme-color-text));
+    --g-theme-page-home-panels-orders-order-right-row-field-value-win-color: rgb(var(--g-theme-color-green-color));
+    --g-theme-page-home-panels-orders-order-right-row-field-value-lose-color: rgb(var(--g-theme-color-red-color));
+    --g-theme-page-home-panels-orders-order-right-row-field-value-push-color: rgb(var(--g-theme-color-border-color-icon-fill));
+    --g-theme-page-home-panels-orders-order-right-row-field-type-icon-bullish-fill: rgb(var(--g-theme-color-green-bg-color));
+    --g-theme-page-home-panels-orders-order-right-row-field-type-icon-bearish-fill: rgb(var(--g-theme-color-red-bg-color));
+    --g-theme-page-home-panels-orders-order-right-row-field-type-icon-draw-fill: rgb(var(--g-theme-color-primary-bg-color));
+    --g-theme-page-home-panels-klines-kline-border-color: rgb(var(--g-theme-color-border-color));
+    --g-theme-page-home-panels-klines-kline-left-icon-fill: rgb(var(--g-theme-color-border-color-icon-fill));
+    --g-theme-page-home-panels-klines-kline-left-icon-bullish-fill: rgb(var(--g-theme-color-green-bg-color));
+    --g-theme-page-home-panels-klines-kline-left-icon-bearish-fill: rgb(var(--g-theme-color-red-bg-color));
+    --g-theme-page-home-panels-klines-kline-left-icon-draw-fill: rgb(var(--g-theme-color-primary-bg-color));
+    --g-theme-page-home-panels-klines-kline-right-row-field-name-color: rgb(var(--g-theme-color-label));
+    --g-theme-page-home-panels-klines-kline-right-row-field-value-color: rgb(var(--g-theme-color-text));
+    --g-theme-page-home-panels-klines-kline-right-row-field-value-bullish-color: rgb(var(--g-theme-color-green-color));
+    --g-theme-page-home-panels-klines-kline-right-row-field-value-bearish-color: rgb(var(--g-theme-color-red-color));
+    --g-theme-page-home-panels-klines-kline-right-row-field-value-draw-color: rgb(var(--g-theme-color-primary-color));
+    --g-theme-page-home-panels-klines-kline-right-row-field-value-push-color: rgb(var(--g-theme-color-border-color-icon-fill));
+    --g-theme-page-home-panels-rules-rule-left-bullish-color: rgb(var(--g-theme-color-green-color));
+    --g-theme-page-home-panels-rules-rule-left-bearish-color: rgb(var(--g-theme-color-red-color));
+    --g-theme-page-home-panels-rules-rule-left-draw-color: rgb(var(--g-theme-color-primary-color));
+    --g-theme-page-home-panels-rules-rule-left-push-color: rgb(var(--g-theme-color-border-color-icon-fill));
+    --g-theme-page-home-panels-rules-rule-right-color: rgb(var(--g-theme-color-text));
+
+    /* 设置 */
+    --g-theme-page-setup-form-user-profile-balance-color: rgb(var(--g-theme-color-label));
+    --g-theme-page-setup-form-user-profile-role-div-color: rgb(var(--g-theme-color-red-color));
+    --g-theme-page-setup-form-user-profile-role-div-bg-color: rgba(var(--g-theme-color-red-bg-color), 0.1);
+    --g-theme-page-setup-form-user-profile-role-div-svg-fill: rgb(var(--g-theme-color-red-bg-color));
+    --g-theme-page-setup-form-user-profile-role-div-exist-bg-color: rgba(var(--g-theme-color-green-bg-color), 0.1);
+    --g-theme-page-setup-form-user-profile-role-div-exist-text-color: rgb(var(--g-theme-color-green-color));
+    --g-theme-page-setup-form-user-profile-role-div-exist-svg-fill: rgb(var(--g-theme-color-green-bg-color));
+    --g-theme-page-setup-form-ul-li-active-icon-fill: rgb(var(--g-theme-color-primary-bg-color));
+    --g-theme-page-setup-form-ul-li-active-text-color: rgb(var(--g-theme-color-primary-color));
+    --g-theme-page-setup-form-ul-li-icon-fill: rgb(var(--g-theme-color-border-color-icon-fill));
+    --g-theme-page-setup-form-ul-li-label-color: rgb(var(--g-theme-color-label));
+
+    /* 邀请码 */
+    --g-theme-page-invite-code-form-field-qrcode-border-color: var(--g-theme-widget-input-group-border-color);
+
+    /* 账户充值 */
+    --g-theme-page-account-recharge-form-field-wallet-address-border-color: var(--g-theme-widget-input-group-border-color);
+    --g-theme-page-account-recharge-form-field-wallet-address-text-color: rgb(var(--g-theme-color-text));
+    --g-theme-page-account-recharge-form-field-wallet-address-icon-fill: rgb(var(--g-theme-color-border-color-icon-fill));
+
+    /* 期权订单 */
+    --g-theme-page-option-orders-order-field-type-icon-bullish-fill: rgb(var(--g-theme-color-green-bg-color));
+    --g-theme-page-option-orders-order-field-type-icon-bearish-fill: rgb(var(--g-theme-color-red-bg-color));
+    --g-theme-page-option-orders-order-field-type-icon-draw-fill: rgb(var(--g-theme-color-primary-bg-color));
+    --g-theme-page-option-orders-order-result-win-value-color: rgb(var(--g-theme-color-green-color));
+    --g-theme-page-option-orders-order-result-lose-value-color: rgb(var(--g-theme-color-red-color));
+    --g-theme-page-option-orders-order-result-push-value-color: rgb(var(--g-theme-color-label));
+    --g-theme-page-option-orders-order-result-win-icon-fill: rgb(var(--g-theme-color-green-bg-color));
+    --g-theme-page-option-orders-order-result-lose-icon-fill: rgb(var(--g-theme-color-red-bg-color));
+    --g-theme-page-option-orders-order-result-push-icon-fill: rgb(var(--g-theme-color-border-color-icon-fill));
+    --g-theme-page-option-orders-order-result-detail-amplitude-color: rgb(var(--g-theme-color-label));
+    --g-theme-page-option-orders-order-result-detail-amplitude-bullish-color: rgb(var(--g-theme-color-green-color));
+    --g-theme-page-option-orders-order-result-detail-amplitude-bearish-color: rgb(var(--g-theme-color-red-color));
+    --g-theme-page-option-orders-order-result-detail-amplitude-draw-color: rgb(var(--g-theme-color-primary-color));
+}
+
+/******************************************************************************/
+/* dark主题 */
+/******************************************************************************/
+/* [data-theme="dark"] {} */

@@ -1,0 +1,39 @@
+.m-account-withdrawal {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    min-height: 100%;
+}
+
+.m-account-withdrawal .w-form .field .money {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.m-account-withdrawal .w-form .field .money>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    color: var(--g-theme-widget-form-field-name-color);
+    font-size: var(--g-size-14px);
+    font-weight: 500;
+}
+
+.m-account-withdrawal .w-form .field .money>div .text {
+    margin-right: var(--g-size-4px);
+}
+
+.m-account-withdrawal .w-form .field .money>div .value {
+    max-width: var(--g-size-80px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.m-account-withdrawal .w-form .w-btn {
+    margin-top: var(--g-size-24px);
+}

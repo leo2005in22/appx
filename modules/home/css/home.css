@@ -1,0 +1,142 @@
+.m-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    min-height: 100%;
+}
+
+.m-home .w-form .header {
+    margin-bottom: var(--g-size-0px);
+}
+
+.m-home .w-form .header .setup {
+    width: var(--g-size-18px);
+    height: auto;
+}
+
+.m-home .market {
+    padding: var(--g-size-0px) var(--g-size-12px);
+}
+
+.m-home .market .current {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--g-size-10px);
+}
+
+.m-home .market .current .time {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.m-home .market .current .time div {
+    font-size: var(--g-size-12px);
+}
+
+.m-home .market .current .time .label {
+    color: var(--g-theme-page-home-market-current-time-label-color);
+    margin-bottom: var(--g-size-4px);
+}
+
+.m-home .market .current .time .value {
+    color: var(--g-theme-page-home-market-current-time-value-color);
+}
+
+.m-home .market .current .price {
+    color: var(--g-theme-page-home-market-current-price-color);
+    font-size: var(--g-size-30px);
+    font-weight: bolder;
+    text-align: center;
+}
+
+.m-home .market .current .amplitude {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.m-home .market .current .amplitude div {
+    font-size: var(--g-size-12px);
+}
+
+.m-home .market .current .amplitude .label {
+    color: var(--g-theme-page-home-market-current-amplitude-label-color);
+    margin-bottom: var(--g-size-4px);
+}
+
+.m-home .market .current .amplitude .value {
+    color: var(--g-theme-page-home-market-current-amplitude-value-color);
+}
+
+.m-home .market .current .amplitude .value::after {
+    content: "%";
+}
+
+.m-home .market .current .amplitude .value.bullish {
+    color: var(--g-theme-page-home-market-current-amplitude-value-bullish-color);
+}
+
+.m-home .market .current .amplitude .value.bullish::before {
+    content: "+";
+}
+
+.m-home .market .current .amplitude .value.bearish {
+    color: var(--g-theme-page-home-market-current-amplitude-value-bearish-color);
+}
+
+.m-home .market .current .amplitude .value.bearish::before {
+    content: "-";
+}
+
+.m-home .market .current .amplitude .value.draw {
+    color: var(--g-theme-page-home-market-current-amplitude-value-draw-color);
+}
+
+.m-home .market .current .amplitude .value.draw::before {
+    content: "±";
+}
+
+.m-home .market .ohlc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--g-size-10px);
+}
+
+.m-home .market .ohlc div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--g-size-12px);
+}
+
+.m-home .market .ohlc div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.m-home .market .ohlc div:last-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.m-home .market .ohlc div .label {
+    color: var(--g-theme-page-home-market-ohlc-div-label-color);
+    margin-bottom: var(--g-size-4px);
+}
+
+.m-home .market .ohlc div .value {
+    color: var(--g-theme-page-home-market-ohlc-div-value-color);
+}

@@ -1,0 +1,147 @@
+.m-setup {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    min-height: 100%;
+}
+
+.m-setup .w-form .user {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: var(--g-size-10px);
+}
+
+.m-setup .w-form .user .avatar {
+    width: var(--g-size-56px);
+    height: auto;
+    border-radius: 50%;
+    margin-right: var(--g-size-16px);
+}
+
+.m-setup .w-form .user .profile {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+.m-setup .w-form .user .profile .name {
+    font-size: var(--g-size-20px);
+    font-weight: 500;
+    word-break: break-all;
+}
+
+.m-setup .w-form .user .profile .balance {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    color: var(--g-theme-page-setup-form-user-profile-balance-color);
+    font-size: var(--g-size-14px);
+    margin: var(--g-size-8px) var(--g-size-0px);
+}
+
+.m-setup .w-form .user .profile .balance .label {
+    margin-right: var(--g-size-4px);
+}
+
+.m-setup .w-form .user .profile .role {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.m-setup .w-form .user .profile .role div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--g-theme-page-setup-form-user-profile-role-div-color);
+    background-color: var(--g-theme-page-setup-form-user-profile-role-div-bg-color);
+    border-radius: var(--g-size-4px);
+    padding: var(--g-size-2px) var(--g-size-6px);
+    margin-right: var(--g-size-4px);
+}
+
+.m-setup .w-form .user .profile .role div:last-of-type {
+    margin-right: var(--g-size-0px);
+}
+
+.m-setup .w-form .user .profile .role div .text {
+    width: fit-content;
+    font-size: var(--g-size-12px);
+    font-weight: 400;
+    background-color: transparent;
+}
+
+.m-setup .w-form .user .profile .role div svg {
+    fill: var(--g-theme-page-setup-form-user-profile-role-div-svg-fill);
+    width: var(--g-size-14px);
+    min-width: var(--g-size-14px);
+    height: auto;
+}
+
+.m-setup .w-form .user .profile .role div.exist {
+    background-color: var(--g-theme-page-setup-form-user-profile-role-div-exist-bg-color);
+}
+
+.m-setup .w-form .user .profile .role div.exist .text {
+    color: var(--g-theme-page-setup-form-user-profile-role-div-exist-text-color);
+}
+
+.m-setup .w-form .user .profile .role div.exist svg {
+    fill: var(--g-theme-page-setup-form-user-profile-role-div-exist-svg-fill);
+}
+
+.m-setup .w-form .label {
+    display: block;
+    color: var(--g-theme-widget-form-field-name-color);
+    font-size: var(--g-size-14px);
+    font-weight: 400;
+}
+
+.m-setup .w-form ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    /* 用line-height而不用padding，是为了防止列表中有高于字体的元素时，与其他只有文字列表高度保持一致 */
+    line-height: var(--g-size-56px);
+}
+
+.m-setup .w-form ul li.menu:active .icon,
+.m-setup .w-form ul li.cmd:active .icon {
+    fill: var(--g-theme-page-setup-form-ul-li-active-icon-fill);
+}
+
+.m-setup .w-form ul li.menu:active .text,
+.m-setup .w-form ul li.cmd:active .text {
+    color: var(--g-theme-page-setup-form-ul-li-active-text-color);
+}
+
+.m-setup .w-form ul li .icon {
+    fill: var(--g-theme-page-setup-form-ul-li-icon-fill);
+    width: var(--g-size-14px);
+    min-width: var(--g-size-14px);
+    height: auto;
+    margin-right: var(--g-size-10px);
+}
+
+.m-setup .w-form ul li .text {
+    font-size: var(--g-size-16px);
+    font-weight: 400;
+}
+
+.m-setup .w-form ul li .label {
+    color: var(--g-theme-page-setup-form-ul-li-label-color);
+    font-size: var(--g-size-14px);
+}
+
+.m-setup .w-form ul li> :nth-child(3) {
+    margin-left: auto;
+}

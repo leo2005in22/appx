@@ -1,0 +1,22 @@
+.m-invite-code {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    min-height: 100%;
+}
+
+.m-invite-code .w-form .field .qrcode {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: solid var(--g-size-1px) var(--g-theme-page-invite-code-form-field-qrcode-border-color);
+    border-radius: var(--g-size-10px);
+    padding: var(--g-size-20px) var(--g-size-0px);
+}
+
+.m-invite-code .w-form .field .qrcode img {
+    width: 50%;
+    height: auto;
+}

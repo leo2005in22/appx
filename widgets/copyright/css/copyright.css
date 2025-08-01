@@ -1,0 +1,12 @@
+.w-copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: var(--g-size-40px);
+    color: var(--g-theme-widget-copyright-color);
+    background-color: var(--g-theme-widget-copyright-bg-color);
+    font-size: var(--g-size-12px);
+    margin-top: auto;
+}

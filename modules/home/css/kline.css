@@ -1,0 +1,110 @@
+.m-home .kline .bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--g-size-10px);
+    background-color: var(--g-theme-page-home-kline-bar-bg-color);
+    padding: var(--g-size-4px) var(--g-size-10px);
+}
+
+.m-home .kline .bar div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.m-home .kline .bar div div {
+    border: var(--g-size-1px) solid var(--g-theme-page-home-kline-bar-div-div-border-color);
+    border-radius: var(--g-size-4px);
+    padding: var(--g-size-4px) var(--g-size-8px);
+    margin-right: var(--g-size-6px);
+}
+
+.m-home .kline .bar div div:last-of-type {
+    margin-right: var(--g-size-0px);
+}
+
+.m-home .kline .bar div div.selected {
+    border-color: var(--g-theme-page-home-kline-bar-div-div-selected-border-color);
+    background-color: var(--g-theme-page-home-kline-bar-div-div-selected-bg-color);
+}
+
+.m-home .kline .bar .line {
+    justify-content: flex-start;
+}
+
+.m-home .kline .bar .ma {
+    justify-content: flex-end;
+}
+
+.m-home .kline .bar .ma div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.m-home .kline .history {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--g-size-12px);
+    background-color: var(--g-theme-page-home-kline-history-bg-color);
+    padding: var(--g-size-4px) var(--g-size-10px);
+}
+
+.m-home .kline .history div .label {
+    color: var(--g-theme-page-home-kline-history-div-label-color);
+    margin-bottom: var(--g-size-4px);
+}
+
+.m-home .kline .history div .value {
+    color: var(--g-theme-page-home-kline-history-div-value-color);
+}
+
+.m-home .kline .history .amplitude {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.m-home .kline .history .amplitude .value::after {
+    content: "%";
+}
+
+.m-home .kline .history .amplitude .value.bullish {
+    color: var(--g-theme-page-home-kline-history-amplitude-value-bullish-color);
+}
+
+.m-home .kline .history .amplitude .value.bullish::before {
+    content: "+";
+}
+
+.m-home .kline .history .amplitude .value.bearish {
+    color: var(--g-theme-page-home-kline-history-amplitude-value-bearish-color);
+}
+
+.m-home .kline .history .amplitude .value.bearish::before {
+    content: "-";
+}
+
+.m-home .kline .history .amplitude .value.draw {
+    color: var(--g-theme-page-home-kline-history-amplitude-value-draw-color);
+}
+
+.m-home .kline .history .amplitude .value.draw::before {
+    content: "±";
+}
+
+.m-home .kline .chart {
+    width: 100%;
+    height: var(--g-size-330px);
+}
+
+/* LightweightCharts强制增加的logo，只能在css中隐藏 */
+#tv-attr-logo {
+    display: none !important;
+}

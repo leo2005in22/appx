@@ -1,0 +1,19 @@
+.m-help {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    min-height: 100%;
+}
+
+.m-help .w-form .content h3 {
+    line-height: var(--g-size-36px);
+    font-size: var(--g-size-18px);
+}
+
+.m-help .w-form .content p {
+    line-height: var(--g-size-36px);
+    font-size: var(--g-size-16px);
+    text-indent: var(--g-size-32px);
+    word-break: break-all;
+}
