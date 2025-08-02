@@ -134,12 +134,6 @@
     /* 登录 */
     --g-theme-page-login-form-links-color: rgb(var(--g-theme-color-primary-color));
 
-    /* 注册账户 */
-    --g-theme-page-register-account-form-captcha-name-get-captcha-color: rgb(var(--g-theme-color-primary-color));
-
-    /* 忘记密码 */
-    --g-theme-page-forgot-password-form-captcha-name-get-captcha-color: rgb(var(--g-theme-color-primary-color));
-
     /* 语言 */
     --g-theme-page-language-form-field-language-selected-color: rgb(var(--g-theme-color-primary-color));
 
